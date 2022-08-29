@@ -3,13 +3,10 @@ import spotipy
 import os
 from spotipy.oauth2 import SpotifyOAuth
 from bs4 import BeautifulSoup
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
-CLIENT_ID = client_iD
-CLIENT_SECRET = client_serect_code
+CLIENT_ID = "client_iD"
+CLIENT_SECRET = "client_serect_code"
 URL = "https://www.billboard.com/charts/hot-100"
 SONG_URIS = []
 
@@ -36,7 +33,7 @@ for song in filtered_list:
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(scope="playlist-modify-private",
                                                client_id=CLIENT_ID,
                                                client_secret=CLIENT_SECRET,
-                                               redirect_uri=os.getenv('redirect_uri'),
+                                               redirect_uri="redirect_uri",
                                                show_dialog=True,
                                                cache_path="token.txt"
                                                ))
