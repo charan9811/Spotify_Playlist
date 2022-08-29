@@ -8,8 +8,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-CLIENT_ID = os.getenv("CLIENT_ID")
-CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+CLIENT_ID = client_iD
+CLIENT_SECRET = client_serect_code
 URL = "https://www.billboard.com/charts/hot-100"
 SONG_URIS = []
 
