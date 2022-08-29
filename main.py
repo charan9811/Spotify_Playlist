@@ -60,5 +60,4 @@ playlist_id = my_playlist['id']
 
 # ********************************* Adding songs to playlist ************************************* #
 
-post_spotify = sp.playlist_add_items(playlist_id=playlist_id, items=SONG_URIS)
-print(post_spotify)
+sp.playlist_add_items(playlist_id=playlist_id, items=SONG_URIS)
